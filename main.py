@@ -3,15 +3,15 @@ import telebot
 from telebot import types
 import psycopg2
 
-token = '5785935703:AAFHBmB5TGi9zxQZvOTEokQzifbBfJIKGWA'
+token = 'Your Telegram bot token'
 bot = telebot.TeleBot(token)
 
 def make_conn():
     conn = psycopg2.connect(
-        database="task_manager",
-        user="postgres",
-        password="111200209",
-        host="localhost"
+        database="name",
+        user="username",
+        password="",
+        host=""
     )
     return conn
 
